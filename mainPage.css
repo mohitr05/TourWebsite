@@ -42,7 +42,7 @@ header div {
 nav a {
     text-decoration: none; /* removes underline */
     color: rgb(0, 0, 0); /* change to any color you want */
-    font-family: 'Inter', sans-serif; /* change to any font you like */
+    font-family: 'Puritan', sans-serif; /* change to any font you like */
     font-size: 14.39px; /* optional: adjust font size */
 }
 
@@ -61,6 +61,6 @@ nav a:hover {
 }
 .logo {
     display: flex;
-    padding-left: 60px;;
+    padding-left: 60px;
 }
 
