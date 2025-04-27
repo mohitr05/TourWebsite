@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header div img {
+    width: 419.97px;
+    height: 103.05px;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 15px; 
+   
+}
+.search{
+    padding:20px;
+}
+.heart{
+    padding:10px;
+}
+.navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar li {
+    display: inline-block;
+ 
+}
+nav a {
+    text-decoration: none; /* removes underline */
+    color: rgb(0, 0, 0); /* change to any color you want */
+    font-family: 'Inter', sans-serif; /* change to any font you like */
+    font-size: 14.39px; /* optional: adjust font size */
+}
+
+/* Optional: add a hover effect */
+nav a:hover {
+  text-decoration: underline;
+    color: #eaa419; /* change to any color you want on hover */
+}
+
+
+.navbar_image {
+    height: 25px;
+    width: 25px;
+    background-color: #ffffff;
+    display: inline-block;
+}
+.logo {
+    display: flex;
+    padding-left: 60px;;
+}
+
