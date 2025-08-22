@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register - Ghumne Chale</title>
+        <link rel="stylesheet" href="register.css">
+    </head>
+    <body>
+        
+
+        <header>
+            <nav>
+                <div class="logo"><img src="Photos/white_logo.png" alt="Logo"></div>
+                <div class="navbar">
+                   <a href="mainPage.html"> <img class="navbar_image search" src="Photos/home.png" alt="Search Icon" "></a>
+                    <ul>
+                        <li><a href="mainPage.html#news">Travel News</a></li>
+                        <li><a href="mainPage.html#magazine">Our Magazine</a></li>
+                        <li><a href="mainPage.html#ExploreDestination">Explore Destination</a></li>
+                        <li> 
+                        <li><a href="mainPage.html#quiz">Quiz</a></li>
+                        <li><a href="mainPage.html#about-us">About us</a></li>
+                    </ul>
+                    <div>
+                        <img id="heart" class="navbar_image heart" src="Photos/heartIcon.png" alt="Heart Icon" onclick="changeHeart()">
+                       <a href="register.html"> <img class="navbar_image" src="Photos/profileIcon.png" alt="Profile Icon"></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    
+        <div class="registration-container">
+            <form class="registration-form" action="/register" method="POST">
+                <h2>Create Account</h2>
+                <input type="text" name="fullname" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                <button type="submit">Register</button>
+                <p>Already have an account? <a href="login.html">Login here</a></p>
+            </form>
+        </div>
+        <script src="javascript.js"></script>
+    </body>
+</html>

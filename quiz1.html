@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Travel Quiz</title>
+  <link rel="stylesheet" href="quiz.css" />
+  <link rel="stylesheet" href="mainPage.css" />
+ 
+</head>
+<body>
+ 
+  <header>
+    <nav>
+        <div class="logo"><img src="Photos/white_logo.png" alt="Logo"></div>
+        <div class="navbar">
+           <a href="mainPage.html"> <img class="navbar_image search" src="Photos/home.png" alt="Search Icon" "></a>
+            <ul>
+                <li><a href="mainPage.html#news">Travel News</a></li>
+                <li><a href="mainPage.html#magazine">Our Magazine</a></li>
+                <li><a href="mainPage.html#ExploreDestination">Explore Destination</a></li>
+                <li> 
+                <li><a href="mainPage.html#quiz">Quiz</a></li>
+                <li><a href="mainPage.html#about-us">About us</a></li>
+            </ul>
+            <div>
+                <img id="heart" class="navbar_image heart" src="Photos/heartIcon.png" alt="Heart Icon" onclick="changeHeart()">
+               <a href="register.html"> <img class="navbar_image" src="Photos/login.png" alt="Profile Icon"></a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+  <!-- ======= QUIZ BODY ======= -->
+  <div class="quiz-container">
+    <div id="quiz-body">
+        <div class="question-set">
+            <p>In which city is the famous Meenakshi Amman Temple located?</p>
+            <button class="option-btn">Chennai</button>
+            <button class="option-btn">Madurai</button>
+            <button class="option-btn">Trichy</button>
+            <button class="option-btn">Thanjavur</button>
+          </div>
+         
+          <div class="question-set">
+            <p>Where is Bharatpur Bird Sanctuary (Keoladeo National Park) located?</p>
+            <button class="option-btn">Gujarat</button>
+            <button class="option-btn">Madhya Pradesh</button>
+            <button class="option-btn">Rajasthan</button>
+            <button class="option-btn">Uttar Pradesh</button>
+          </div>
+         
+          <div class="question-set">
+            <p>The famous Ajanta and Ellora caves are located in which state?</p>
+            <button class="option-btn">Madhya Pradesh</button>
+            <button class="option-btn">Maharashtra</button>
+            <button class="option-btn">Rajasthan</button>
+            <button class="option-btn">Uttar Pradesh</button>
+          </div>
+         
+          <div class="question-set">
+            <p>The capital city of Sikkim is:</p>
+            <button class="option-btn">Shillong</button>
+            <button class="option-btn">Gangtok</button>
+            <button class="option-btn">Aizawl</button>
+            <button class="option-btn">Kohima</button>
+          </div>
+         
+          <div class="question-set">
+            <p>The city famous for the International Kite Festival is:</p>
+            <button class="option-btn">Delhi</button>
+            <button class="option-btn">Jaipur</button>
+            <button class="option-btn">Ahmedabad</button>
+            <button class="option-btn">Mumbai</button>
+          </div>
+         
+          <div class="question-set">
+            <p>Which desert is located in Gujarat?</p>
+            <button class="option-btn">Thar Desert</button>
+            <button class="option-btn">Rann of Kutch</button>
+            <button class="option-btn">Luni Desert</button>
+            <button class="option-btn">Marusthali Desert</button>
+          </div>
+         
+          <div class="question-set">
+            <p>The famous Kangla Fort is located in which northeastern state?</p>
+            <button class="option-btn">Assam</button>
+            <button class="option-btn">Manipur</button>
+            <button class="option-btn">Tripura</button>
+            <button class="option-btn">Mizoram</button>
+          </div>
+         
+          <div class="question-set">
+            <p>Which city is called the "City of Pearls" in India?</p>
+            <button class="option-btn">Jaipur</button>
+            <button class="option-btn">Hyderabad</button>
+            <button class="option-btn">Kochi</button>
+            <button class="option-btn">Surat</button>
+          </div>
+         
+          <div class="question-set">
+            <p>The famous Chilika Lake, India's largest coastal lagoon, is located in which state?</p>
+            <button class="option-btn">Andhra Pradesh</button>
+            <button class="option-btn">Tamil Nadu</button>
+            <button class="option-btn">Odisha</button>
+            <button class="option-btn">Kerala</button>
+          </div>
+         
+          <div class="question-set">
+            <p>The Ganga Aarti is a must-see experience at which city’s ghats?</p>
+            <button class="option-btn">Haridwar</button>
+            <button class="option-btn">Varanasi</button>
+            <button class="option-btn">Rishikesh</button>
+            <button class="option-btn">Prayagraj</button>
+          </div>
+         
+      <button id="next-btn" disabled>Next Question</button>
+    </div>
+
+    <div id="feedback" class="feedback"></div>
+
+    <div id="result" class="hidden">
+      <p id="score"></p>
+      <button onclick="restartQuiz()">Restart Quiz</button>
+    </div>
+  </div>
+
+  <script src="javascript1.js"></script>
+</body>
+</html>

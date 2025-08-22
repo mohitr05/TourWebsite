@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Travel Quiz</title>
+  <link rel="stylesheet" href="quiz.css" />
+  <link rel="stylesheet" href="mainPage.css" />
+ 
+</head>
+<body>
+  <!-- ======= NAVIGATION BAR ======= -->
+  <header>
+    <nav>
+        <div class="logo"><img src="Photos/white_logo.png" alt="Logo"></div>
+        <div class="navbar">
+           <a href="mainPage.html"> <img class="navbar_image search" src="Photos/home.png" alt="Search Icon" "></a>
+            <ul>
+                <li><a href="mainPage.html#news">Travel News</a></li>
+                <li><a href="mainPage.html#magazine">Our Magazine</a></li>
+                <li><a href="mainPage.html#ExploreDestination">Explore Destination</a></li>
+                <li> 
+                <li><a href="mainPage.html#quiz">Quiz</a></li>
+                <li><a href="mainPage.html#about-us">About us</a></li>
+            </ul>
+            <div>
+                <img id="heart" class="navbar_image heart" src="Photos/heartIcon.png" alt="Heart Icon" onclick="changeHeart()">
+               <a href="register.html"> <img class="navbar_image" src="Photos/login.png" alt="Profile Icon"></a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+  <!-- ======= QUIZ BODY ======= -->
+  <div class="quiz-container">
+    <div id="quiz-body">
+        <div class="question-set">
+            <p>Which fort in Rajasthan is famously known as the "Golden Fort"?</p>
+            <button class="option-btn">Kumbhalgarh Fort</button>
+            <button class="option-btn">Jaisalmer Fort</button>
+            <button class="option-btn">Amer Fort</button>
+            <button class="option-btn">Chittorgarh Fort</button>
+          </div>
+          
+          <div class="question-set">
+            <p>Which beach in Goa is famous for its vibrant nightlife?</p>
+            <button class="option-btn">Palolem Beach</button>
+            <button class="option-btn">Anjuna Beach</button>
+            <button class="option-btn">Agonda Beach</button>
+            <button class="option-btn">Colva Beach</button>
+          </div>
+          
+          <div class="question-set">
+            <p>Where can you visit the Living Root Bridges?</p>
+            <button class="option-btn">Arunachal Pradesh</button>
+            <button class="option-btn">Nagaland</button>
+            <button class="option-btn">Meghalaya</button>
+            <button class="option-btn">Tripura</button>
+          </div>
+          
+          <div class="question-set">
+            <p>The famous ‘Loktak Lake’ (with floating islands) is located in which state?</p>
+            <button class="option-btn">Assam</button>
+            <button class="option-btn">Tripura</button>
+            <button class="option-btn">Manipur</button>
+            <button class="option-btn">Mizoram</button>
+          </div>
+          
+          <div class="question-set">
+            <p>In which Indian union territory is Pangong Lake partially located?</p>
+            <button class="option-btn">Jammu and Kashmir</button>
+            <button class="option-btn">Ladakh</button>
+            <button class="option-btn">Sikkim</button>
+            <button class="option-btn">Himachal Pradesh</button>
+          </div>
+          
+          <div class="question-set">
+            <p>Which UNESCO World Heritage site is located in Hampi, Karnataka?</p>
+            <button class="option-btn">Rock Shelters of Bhimbetka</button>
+            <button class="option-btn">Group of Monuments at Hampi</button>
+            <button class="option-btn">Elephanta Caves</button>
+            <button class="option-btn">Pattadakal</button>
+          </div>
+          
+          <div class="question-set">
+            <p>The Great Himalayan National Park is located in which state?</p>
+            <button class="option-btn">Jammu & Kashmir</button>
+            <button class="option-btn">Sikkim</button>
+            <button class="option-btn">Himachal Pradesh</button>
+            <button class="option-btn">Uttarakhand</button>
+          </div>
+          
+          <div class="question-set">
+            <p>The Sunderbans are famous for which animal?</p>
+            <button class="option-btn">Leopard</button>
+            <button class="option-btn">Bengal Tiger</button>
+            <button class="option-btn">Indian Bison</button>
+            <button class="option-btn">Snow Leopard</button>
+          </div>
+          
+          <div class="question-set">
+            <p>The Andaman Islands are part of which ocean?</p>
+            <button class="option-btn">Atlantic Ocean</button>
+            <button class="option-btn">Indian Ocean</button>
+            <button class="option-btn">Pacific Ocean</button>
+            <button class="option-btn">Arabian Sea</button>
+          </div>
+          
+          <div class="question-set">
+            <p>Which city is known as the "Scotland of the East"?</p>
+            <button class="option-btn">Shillong</button>
+            <button class="option-btn">Gangtok</button>
+            <button class="option-btn">Aizawl</button>
+            <button class="option-btn">Kohima</button>
+          </div>
+          
+      <button id="next-btn" disabled>Next Question</button>
+    </div>
+
+
+
+
+    <div id="feedback" class="feedback"></div>
+
+
+
+
+    <div id="result" class="hidden">
+      <p id="score"></p>
+      <button onclick="restartQuiz()">Restart Quiz</button>
+    </div>
+  </div>
+
+
+
+
+  <script src="javascript2.js"></script>
+</body>
+</html>

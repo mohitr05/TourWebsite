@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> <!-- Fixed meta tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ghumne Chale</title>
+        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="mainPage.css">
+    </head>
+
+
+
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="Photos/white_logo.png" alt="Logo"></div>
+            <div class="navbar">
+               <a href="mainPage.html"> <img class="navbar_image search" src="Photos/home.png" alt="Search Icon" "></a>
+                <ul>
+                    <li><a href="mainPage.html#news">Travel News</a></li>
+                    <li><a href="mainPage.html#magazine">Our Magazine</a></li>
+                    <li><a href="mainPage.html#ExploreDestination">Explore Destination</a></li>
+                    <li> 
+                    <li><a href="mainPage.html#quiz">Quiz</a></li>
+                    <li><a href="mainPage.html#about-us">About us</a></li>
+                </ul>
+                <div>
+                    <img id="heart" class="navbar_image heart" src="Photos/heartIcon.png" alt="Heart Icon" onclick="changeHeart()">
+                   <a href="register.html"> <img class="navbar_image" src="Photos/profileIcon.png" alt="Profile Icon"></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form name="loginForm" onsubmit="return validateLoginForm()">
+            <input type="text" name="username" placeholder="Username">
+            <br>
+            <input type="password" name="password" placeholder="Password">
+            <br>
+            <button type="submit">Login</button>
+          </form>
+          
+        <p id="error-message"></p>
+      </div>
+   
+      <script src="javascript.js"></script>
+</body>
+</html>
